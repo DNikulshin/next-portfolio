@@ -1,0 +1,16 @@
+modules = ["nodejs-20"]
+[nix]
+channel = "stable-24_05"
+
+[rules]
+
+[rules.formatter]
+
+[rules.formatter.fileExtensions]
+
+[rules.formatter.fileExtensions.".ts"]
+id = "module:nodejs-20/formatter:prettier"
+
+[[ports]]
+localPort = 5555
+externalPort = 80
